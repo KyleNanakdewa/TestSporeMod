@@ -1,4 +1,4 @@
-<mod displayName="My Mod" unique="MyMod" description="This is an example Custom XML Installer for a hypothetical mod." modVersion="1.0.0.0" installerSystemVersion="1.0.1.0" dllsBuild="2.5.20.0" hasCustomInstaller="true" isExperimental="true" requiresGalaxyReset="false" causesSaveDataDependency="false">
+<mod displayName="My Mod" unique="MyMod" NOdescription="This is an example Custom XML Installer for a hypothetical mod." NOmodVersion="1.0.0.0" installerSystemVersion="1.0.1.0" dllsBuild="2.5.20.0" hasCustomInstaller="true" isExperimental="true" requiresGalaxyReset="false" causesSaveDataDependency="false">
 	<componentGroup unique="groupOne" displayName="This is a Group">
 		<component unique="optionOne" displayName="Option one" description="This is an option in a component group" game="GalacticAdventures?GalacticAdventures" defaultChecked="true">OptionOneA.package?OptionOneB.package</component>
 		<component unique="optionTwo" displayName="Option two" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">OptionTwo.package</component>
