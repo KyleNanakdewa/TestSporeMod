@@ -1,11 +1,59 @@
-<mod displayName="Kade's Test Mod (please ignore)" unique="MyMod" NOdescription="This is an example Custom XML Installer for a hypothetical mod." NOmodVersion="1.0.0.0" installerSystemVersion="1.0.1.0" dllsBuild="2.5.20.0" hasCustomInstaller="true" isExperimental="true" requiresGalaxyReset="false" causesSaveDataDependency="false">
-	<componentGroup unique="groupOne" displayName="This is a Group">
-		<component unique="optionOne" displayName="Option one" description="This is an option in a component group" game="GalacticAdventures?GalacticAdventures" defaultChecked="true">OptionOneA.package?OptionOneB.package</component>
-		<component unique="optionTwo" displayName="Option two" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">OptionTwo.package</component>
+<mod displayName="Dark Injection" unique="Dark Injection 9.r" description="Public Beta 2.3.2&#xA;&#xA;Dark Injection is a mod for Spore, which aims to rebuild as much of Darkspore as possible, and to expand the creative opportunities Spore provides through those once presented within Darkspore." installerSystemVersion="1.0.0.0" dllsBuild="1.0.0.0">
+	<componentGroup unique="userInterface" displayName="User Interface">
+		<component unique="fullDarksporeUI" displayName="Full Darkspore UI" description=" " imagePlacement="InsteadOf" game="GalacticAdventures?GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_UI-!Layouts.package?!!!!!!2019_DI_9_r_Beta2-3-2_UI-Darkspore.package</component>
+		<component unique="betaDarksporeUI" displayName="Darkspore Beta UI" description=" " imagePlacement="InsteadOf" game="GalacticAdventures?GalacticAdventures?GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_UI-!!DSbLayouts.package?!!!!!!2019_DI_9_r_Beta2-3-2_UI-!Layouts.package?!!!!!!2019_DI_9_r_Beta2-3-2_UI-Darkspore.package</component>
+		<component unique="styleOnlyDarksporeUI" displayName="Style-only Darkspore UI" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_UI-Darkspore.package</component>
+		<component unique="shimmerUI" displayName="Shimmer UI" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_UI-Shimmer.package</component>
+		<component unique="halfBlackCoreUI" displayName="Half-Black Core Spore UI" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_UI-HalfBlackCS.package</component>
 		<component unique="coreUI" displayName="Core Spore UI" description=" " imagePlacement="InsteadOf"/>
 	</componentGroup>
-	<component unique="togglableComponent" displayName="Togglable Component" description="This is a togglable component. It can be enabled or disabled by the user. It is enabled by default, as defined by the defaultChecked attribute." game="GalacticAdventures" defaultChecked="true">!!!!!!2018_DI_9_r_Beta2-2-9_UI-Audio_stable.package</component><prerequisite game="GalacticAdventures">Component.package</prerequisite>
-	<prerequisite game="GalacticAdventures">PrerequisiteFile.package</prerequisite>
-	<remove game="GalacticAdventures">NothingActuallyStartsWithThis*</remove>
-	<remove game="Spore">*NothingActuallyEndsWithThis.package</remove>
+	<componentGroup unique="creatureEditorBG" displayName="Creature Editor Background">
+		<component unique="heroEditorBackground" displayName="Hero Editor Background" description=" " imagePlacement="InsteadOf" game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_editor_background-!HeroEditorBG.package</component>
+		<component unique="spaceshipEditorBackground" displayName="Spaceship Editor Background (DI 7)" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_editor_background-SpaceshipEditorBG.package</component>
+		<component unique="ghostTownBackground" displayName="Ghost Town Background (DI 9)" description=" " imagePlacement="InsteadOf" game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_editor_background-zGhostTownBG.package</component>
+		<component unique="coreBackground" displayName="Forest Background (Core Spore)" description=" " imagePlacement="InsteadOf"/>
+	</componentGroup>
+	<component unique="darksporeUIAudio" displayName="Darkspore UI Audio" description="Replaces many of Spore's Interface sounds with their Darkspore counterparts." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_UI-Audio_stable.package</component>
+	<component unique="darksporeUIText" displayName="Darkspore UI Text" description="Replaces numerous Interface text strings with Darkspore-esque counterparts." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_Text-Darkspore.package</component>
+	<component unique="infiniteComplexity" displayName="Infinite Complexity" description="Disables complexity limitations and greatly increases starting currency in all editors, allowing far more complex creations than ever before." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_editor_LC.package</component>
+	<component unique="flexibleEditorCamera" displayName="Flexible Editor Camera" description="Allows the Editor cameras to zoom further out, rotate further above and below the creation, and shift vertically using the R and F keys, facilitating better access to the creation at different angles." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_dEditorCamera_LC.package</component>
+	<component unique="geneticModifier" displayName="Genetic Modifier" description="Adds a new editor to the Village/City/Colony planners, allowing you to edit your Villagers/Civilians/Colonists in the Creature Editor. Does not affect Captain." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_GeneticModifier.package</component>
+	<component unique="armorOutfitterCategory" displayName="Armor Outfitter Category" description="Enables an outfitter part category containing all of the Darkspore armor parts." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_outfitter_category-Armor.package</component>
+	<component unique="weaponsOutfitterCategory" displayName="Weapons Outfitter Category" description="Enables several outfitter part categories containing all of the Darkspore weapons." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_outfitter_category-Weapons.package</component>
+	<component unique="darksporeAdventureStuff" displayName="Darkspore Adventure Objects" description="Enables the use of various Darkspore objects as adventure props, as well as the game's soundtrack for adventure background music." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_!!AdventureObjects.package</component>
+	<component unique="armorCreatureCategory" displayName="Armor Category" description="Enables a creature part category containing all of the Darkspore armor parts." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-Armor.package</component>
+	<component unique="weaponsCreatureCategory" displayName="Weapons Category" description="Enables a creature part category containing all of the Darkspore weapons." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-Weapons.package</component>
+	<component unique="dsCoreSporeCopiesCreatureCategory" displayName="Darkspore-textured Core Spore Part Copies" description="Enables several creature part pages containing copies of all the Core Spore parts, featuring their Darkspore textures." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-DarksporeTexturedCoreSporeCopies.package</component>
+	<component unique="dsCCCreatureCategory" displayName="Darkspore-textured Creepy &amp; Cute Part Copies" description="Enables several creature part pages containing copies of all the Creepy &amp; Cute parts, featuring their Darkspore textures. Requires the Creepy &amp; Cute DLC to be installed, for legal reasons." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-DarksporeTexturedCreepyAndCuteCopies.package</component>
+	<component unique="darksporePaintsCreatureCategory" displayName="Darkspore Paints" description="Enables several creature skinpaint pages containing skinpaints from Darkspore." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-Paints2.package</component>
+	<component unique="extraCorePaintsCreatureCategory" displayName="Additional Core Paints" description="Enables several creature paint pages containing skinpaints from the Cell and Flora Editors." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-Paints.package</component>
+	<component unique="utilityCreatureCategory" displayName="Utility Parts" description="Enables several creature part categories and pages containing various utility parts, such as particle effects." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-UtilityParts.package</component>
+	<component unique="corePagesCreatureCategory" displayName="Core Part Pages" description="Enables several creature part pages containing all of the biological Darkspore parts which roughly fit into existing Core Spore Creature part Categories." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-CorePages.package</component>
+	<component unique="corePagesConceptCreatureCategory" displayName="Core Concept Part Pages" description="Enables several creature part pages containing all of the Darkspore concept art-based parts which roughly fit into existing Core Spore Creature part Categories." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-CorePagesConcept.package</component>
+	<component unique="corePagesCyberCreatureCategory" displayName="Core Cyber Part Pages" description="Enables several creature part pages containing all of the Cyber/Robotic Darkspore parts which roughly fit into existing Core Spore Creature part Categories." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-CorePagesCyber.package</component>
+	<component unique="coreCategoriesCreatureCategory" displayName="Core Part Categories" description="Enables several creature part categories containing parts from other parts of Spore and its DLCs." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_creature_category-CoreCategories.package</component>
+	<component unique="corePagesVehicleCategory" displayName="Darkspore-based Vehicle Parts" description="Enables several vehicle part pages and categories containing various Darkspore-inspired vehicle parts." game="GalacticAdventures" defaultChecked="true">!!!!!!2019_DI_9_r_Beta2-3-2_vehicle_category-CorePages.package</component>
+	<component unique="invisiblerLimbs" displayName="True Invisible Limbs" description="DO NOT ENABLE UNLESS TAKING SCREENSHOTS. Makes the Invisible Limbs invisible in-editor, but also makes them unusable." game="GalacticAdventures" defaultChecked="false">!!!!!!2019_DI_9_r_Beta2-3-2_!InvisiblerLimbs.package</component>
+	<prerequisite game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_zzFoundation_Prop.package</prerequisite>
+	<prerequisite game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_zzFoundation_Res.package</prerequisite>
+	<prerequisite game="GalacticAdventures">!!!!!!2019_DI_9_r_Beta2-3-2_zzFoundation_Text.package</prerequisite>
+	<prerequisite game="Spore">zArenas_Combined.package</prerequisite>
+	<prerequisite>!!!!!!2019_DI_9_r_Beta2-3-2_-disk.dll</prerequisite>
+	<prerequisite>!!!!!!2019_DI_9_r_Beta2-3-2_-steam.dll</prerequisite>
+	<prerequisite>!!!!!!2019_DI_9_r_Beta2-3-2_-steam_patched.dll</prerequisite>
+	<remove game="GalacticAdventures">*Arenas_RDX9*</remove>
+	<remove game="GalacticAdventures">*Arenas_Textures*</remove>
+	<remove game="Spore">*Arenas_RDX9*</remove>
+	<remove game="Spore">*Arenas_Textures*</remove>
+	<remove game="GalacticAdventures">*DI_9_r*</remove>
+	<remove game="Spore">*DI_9_r*</remove>
+	<remove>*DI_9_r*</remove>
+	<remove game="GalacticAdventures">2013_DI*</remove>
+	<remove game="GalacticAdventures">2015_DI*</remove>
+	<remove game="GalacticAdventures">*2013_DI*</remove>
+	<remove game="GalacticAdventures">*2015_DI*</remove>
+	<remove game="Spore">2013_DI*</remove>
+	<remove game="Spore">2015_DI*</remove>
+	<remove game="Spore">*2013_DI*</remove>
+	<remove game="Spore">*2015_DI*</remove>
 </mod>
